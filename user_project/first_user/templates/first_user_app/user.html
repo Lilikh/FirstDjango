@@ -1,0 +1,30 @@
+<html>
+    
+    <head>
+       <title>User</title>
+       
+       
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+              <ul>
+                <h2>user info </h2>
+                {% for user in userProfiles%}
+                <li>first name: {{  user.first_name }}</li>
+                <li>last name: {{  user.last_name }}</li>
+                <li>email: {{  user.email }}</li>
+                <p>______________</p><br>
+                <h2>user info </h2>
+
+                {% endfor %}
+               </ul>
+              </div>
+        </div>
+         </div>
+  
+    </body>
+</html>
